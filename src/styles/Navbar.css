@@ -1,0 +1,77 @@
+/* Navbar container */
+.navbar {
+  background-color: #333; /* Cor de fundo da navbar */
+  color: white; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  display: flex; /* Usando flexbox para layout */
+  justify-content: space-between; /* Espaçamento entre os itens */
+  align-items: center; /* Alinha os itens verticalmente */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Logo ou título da Navbar */
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Menu de navegação */
+.navbar .nav-links {
+  list-style: none; /* Remove os pontos das listas */
+  display: flex;
+  gap: 20px; /* Espaço entre os links */
+  margin: 0; /* Remove a margem */
+}
+
+/* Estilo para os links */
+.navbar .nav-links a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Cor do texto */
+  font-size: 1em;
+  padding: 8px 15px; /* Espaçamento nos links */
+  border-radius: 5px; /* Bordas arredondadas nos links */
+  transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.navbar .nav-links a:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão de menu (Hamburger) em telas pequenas */
+.navbar .menu-toggle {
+  display: none; /* Oculta o botão por padrão */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para o ícone do hambúrguer */
+.navbar .menu-toggle .bar {
+  background-color: white;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto; /* Espaçamento entre as barras */
+}
+
+/* Estilos para Navbar em telas pequenas (mobile) */
+@media screen and (max-width: 768px) {
+  .navbar .nav-links {
+    display: none; /* Oculta o menu */
+    flex-direction: column; /* Exibe os itens de forma vertical */
+    width: 100%;
+    background-color: #333; /* Fundo da navbar */
+    padding: 10px 0;
+  }
+
+  .navbar .nav-links.active {
+    display: flex; /* Mostra o menu ao clicar no hambúrguer */
+  }
+
+  .navbar .menu-toggle {
+    display: block; /* Mostra o botão de hambúrguer */
+  }
+}
