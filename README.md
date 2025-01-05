@@ -40,7 +40,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/SEU_USUARIO/estante-de-livros.git
+   git clone https://github.com/mauricio-theodoro/estante-de-livros.git
    ```
 2. **Navegue até a pasta do projeto**:
    ```bash
